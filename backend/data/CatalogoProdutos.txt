@@ -1,0 +1,279 @@
+### Sobre a Medens
+A Medens é resultado da fusão entre dois grandes fabricantes de implantes odontológicos (Alliage – PROSS e Medens). Com forte investimento em P&D e produção em liga de titânio Grau V (jateamento + ataque ácido), oferece um portfólio completo — do hexágono externo ao cone morse, passando por cirurgia guiada e fluxos digitais — para profissionais exigentes, garantindo know-how científico e inovação em todas as vertentes clínicas.
+
+---
+
+### Embalagens Medens
+- **Colosso Evolution**: embalagem prata, com modelo, lote e data impressos no verso.  
+- **Novo Colosso**: embalagem azul, mesmas identificação.  
+- **Cores das tampas**: identificação rápida de diâmetros (Ø 2,5 mm a Ø 5,0 mm).  
+- **Instruções de uso**:  
+  1. Selecione a chave de instalação correspondente.  
+  2. Engate na rosca bidigital.  
+  3. Retire o implante do berço e posicione no alvéolo cirúrgico.
+
+---
+
+### Cone Morse | Componentes Protéticos
+- **Pilar Estético CM (Linha Zero)**  
+  - Curto (Ø 4,5 mm; alturas 1,5 mm, 3 mm, 4,5 mm): 5454-MCE, 0354-MCE, 5154-MCE  
+  - Longo  (Ø 4,5 mm; alturas 1,5 mm, 3 mm, 4,5 mm): ELM-4515, ELM-4530, ELM-4545  
+
+- **Pilar CM Linha Zero (Ø 3,5 mm)**  
+  - Curto (1,5 mm, 3 mm, 4,5 mm): ACM-3515, ACM-3530, ACM-3545  
+  - Longo  (1,5 mm, 3 mm, 4,5 mm): ALM-3515, ALM-3530, ALM-3545  
+
+- **Análogo dos Implantes CM**: AIM-3510; AIM-4010; AIM-5010 (Ø 3,5 mm; 4 mm; 5 mm) :contentReference[oaicite:0]{index=0}  
+
+- **Transfer Moldeira Fechada LZ**: TFI-3512; TFI-4012; TFI-5012 (Ø 3,5 mm; 4,0 mm; 5,0 mm)  
+- **Transfer Moldeira Aberta LZ**: TAI-3512; TAI-4012; TAI-5012 (idem)  
+- **Cicatrizador Estético LZ**: CEI-3515; CEI-3530; CEI-3545; CEI-4015; CEI-4030; CEI-4045; CEI-5015; CEI-5030; CEI-5045 (Ø 3,5 mm; 4,0 mm; 5,0 mm; alt.: 1,5 mm; 3 mm; 4,5 mm)  
+- **Cicatrizador Regular LZ**: CRHI-3515; CRHI-3530; CRHI-3545; CRHI-4015; CRHI-4030; CRHI-4045; CRHI-5015; CRHI-5030; CRHI-5045 (idem)  
+- **Pilar Regular LZ**  
+  - Curto: RCI-3507; RCI-4007; RCI-5007  
+  - Longo: RLI-3510; RLI-4010; RLI-5010 :contentReference[oaicite:1]{index=1}  
+
+---
+
+### Cone Morse | Componentes | CAD/CAM
+- **Ti-BASE NÃO ROTACIONAL CM | LZ** (Ø 3,5 mm; 4,5 mm) — torque máximo 10 N·cm¹  
+- **Ti-BASE ROTACIONAL CM | LZ** (Ø 3,5 mm; 4,5 mm) — torque máximo 10 N·cm¹  
+- **Ti-BASE REGULAR CM** (Ø 3,5 mm) — torque máximo 10 N·cm¹  
+- **Corpo de Escaneamento JLZ-3512** (Ø 3,5 mm) — torque máximo 25 N·cm¹  
+- **Corpo de Escaneamento JCM-3512** (Ø 3,5 mm) — torque máximo 25 N·cm¹ :contentReference[oaicite:2]{index=2}  
+
+O Ti-BASE Medens garante precisão de encaixe em coroas produzidas via CAD/CAM. Produzido em liga de titânio Grau V e compatível com plataforma switching: implantes Ø 4,0 mm e 5,0 mm.  
+
+---
+
+### Linha Zero | Componentes Protéticos
+- **Análogo dos Implantes CM**: AIM-3510; AIM-4010; AIM-5010 (Ø 3,5 mm; 4 mm; 5 mm)  
+- **Pilar Provisório Não Rotacional LZ**: PNI-3511; PNI-4011; PNI-5011  
+- **Pilar Provisório Rotacional LZ**: PRI-3511; PRI-4011; PRI-5011  
+- **Pilar Calcinável CoCr Não Rotacional LZ**: LNI-3511; LNI-4011; LNI-5011 :contentReference[oaicite:3]{index=3}  
+
+¹ Valor de segurança para preservar a integridade do encaixe.  
+
+---
+
+### Hexágono Externo | Implantes
+- **Encaixe**: Hexágono Externo de 2,7 × 0,7 mm (altura × largura) com hexágono interno de 1,5 × 2,1 mm  
+- **Material**: Liga de Titânio Grau V  
+- **Tratamento de superfície**: jateamento + ataque ácido  
+- **Rosca**: dupla progressiva  
+- **Técnica**: switching  
+- **Diâmetros**: 3,5 mm; 4,1 mm; 5,0 mm  
+- **Alturas**:  
+  - Ø 3,5 mm: 7,0; 8,5; 10,0; 11,5; 13,0; 14,5; 16,0 mm  
+  - Ø 4,1 mm: 7,0; 8,5; 10,0; 11,5; 13,0; 14,5; 16,0 mm  
+  - Ø 5,0 mm: 6,0; 7,0; 8,5; 10,0; 11,5; 13,0; 14,5; 16,0 mm  
+- **Códigos**:  
+  - Ø 3,5 mm: IHEN-3507, IHEN-3508, IHEN-3510, IHEN-3511, IHEN-3513, IHEN-3514, IHEN-3516  
+  - Ø 4,1 mm: IHEN-4007, IHEN-4008, IHEN-4010, IHEN-4011, IHEN-4013, IHEN-4014, IHEN-4016  
+  - Ø 5,0 mm: IHEN-5006, IHEN-5007, IHEN-5008, IHEN-5010, IHEN-5011, IHEN-5013, IHEN-5014, IHEN-5016  
+- **Parafuso padrão**: M2 (todos os diâmetros)  
+- **Indicação óssea**: Tipo I a IV  
+- **Torque máx. de inserção**: 70 N·cm¹  
+- **Torque interno hexagonal**: 2,1 mm  
+
+> ¹ Valor de segurança para preservar o encaixe protético. :contentReference[oaicite:0]{index=0}
+
+---
+
+### Hexágono Externo | Componentes Protéticos
+- **Cicatrizadores**  
+  - Regular: CRE-3515; CRE-3530; CRE-3545; CRE-4015; CRE-4030; CRE-4045; CRE-5015; CRE-5030; CRE-5045  
+  - Estético: CEE-3515; CEE-3530; CEE-3545; CEE-4015; CEE-4030; CEE-4045; CEE-5015; CEE-5030; CEE-5045 :contentReference[oaicite:1]{index=1}
+- **Transferentes**  
+  - Fechada: TFE-3512; TFE-4012; TFE-5012  
+  - Aberta: TAE-3512; TAE-4012; TAE-5012 :contentReference[oaicite:2]{index=2}
+- **Análogos de Implantes**  
+  - ACIHE-3510; ACIHE-4010; ACIHE-5010  
+  - Digital: ADE-3510; ADE-4010; ADE-5010 :contentReference[oaicite:3]{index=3}
+- **Pilares Protéticos**  
+  - **Regular**  
+    - Curto: RCHE-3507; RCHE-4007; RCHE-5007  
+    - Longo: RLHE-3510; RLHE-4010; RLHE-5010  
+  - **Estético**  
+    - Curto: ECE-3507; ECE-4007; ECE-5007  
+    - Longo: ELE-3510; ELE-4010; ELE-5010  
+  - **Calcinável (CoCr)**  
+    - Curto: ACHE-3507; ACHE-4007; ACHE-5007  
+    - Longo: ALHE-3510; ALHE-4010; ALHE-5010 :contentReference[oaicite:4]{index=4}
+
+---
+
+### Hexágono Externo | Componentes | CAD/CAM
+
+- **Ti-BASE Não Rotacional (HE)**  
+  - **Diâmetros disponíveis:**  
+    - Ø 3,5 mm (para próteses unitárias)  
+    - Ø 4,1 mm (compatível com implantes Ø 4,1 mm e Ø 5,0 mm – plataforma switching)  
+  - **Altura de cimentação:** 4 mm  
+  - **Torque máximo de cimentação:** 10 N·cm¹  
+  - **Códigos:**  
+    - LKRLE-3504 (Ø 3,5 mm)  
+    - LKRLE-4004 (Ø 4,1 mm) :contentReference[oaicite:0]{index=0}  
+
+- **Ti-BASE Rotacional (HE)**  
+  - **Diâmetros disponíveis:** Ø 3,5 mm; Ø 4,1 mm  
+  - **Altura de cimentação:** 4 mm  
+  - **Torque máximo de cimentação:** 10 N·cm¹  
+  - **Códigos:**  
+    - LKNLE-3504 (Ø 3,5 mm)  
+    - LKNLE-4004 (Ø 4,1 mm) :contentReference[oaicite:1]{index=1}  
+
+- **Corpo de Escaneamento (HE)**  
+  - **Código:** JHE-3512  
+  - **Diâmetro:** Ø 3,5 mm  
+  - **Torque de fixação:** 30 N·cm¹ :contentReference[oaicite:2]{index=2}  
+
+- **Parafuso de Fixação (HE)**  
+  - **Código:** PPP-2085  
+  - **Rosca:** M2  
+  - **Acionado por:** chaves hexagonais de 1,2 mm :contentReference[oaicite:3]{index=3}  
+
+- **Espaçadores**  
+  - **Anel espaçador:** EPRO-0001  
+  - **Cápsula espaçadora:** PROC-0405  
+  - **O-ring:** BMOR-6497 (Ø 4,1 mm) :contentReference[oaicite:4]{index=4}  
+
+> ¹ Valor de segurança para preservar a integridade do encaixe protético.  
+
+---
+
+### Hexágono Externo | Componentes | CAD/CAM
+
+- **Ti-BASE Não Rotacional (HE)**  
+  - **Diâmetros disponíveis:**  
+    - Ø 3,5 mm (para próteses unitárias)  
+    - Ø 4,1 mm (compatível com implantes Ø 4,1 mm e Ø 5,0 mm – plataforma switching)  
+  - **Altura de cimentação:** 4 mm  
+  - **Torque máximo de cimentação:** 10 N·cm¹  
+  - **Códigos:**  
+    - LKRLE-3504 (Ø 3,5 mm)  
+    - LKRLE-4004 (Ø 4,1 mm) :contentReference[oaicite:0]{index=0}  
+
+- **Ti-BASE Rotacional (HE)**  
+  - **Diâmetros disponíveis:** Ø 3,5 mm; Ø 4,1 mm  
+  - **Altura de cimentação:** 4 mm  
+  - **Torque máximo de cimentação:** 10 N·cm¹  
+  - **Códigos:**  
+    - LKNLE-3504 (Ø 3,5 mm)  
+    - LKNLE-4004 (Ø 4,1 mm) :contentReference[oaicite:1]{index=1}  
+
+- **Corpo de Escaneamento (HE)**  
+  - **Código:** JHE-3512  
+  - **Diâmetro:** Ø 3,5 mm  
+  - **Torque de fixação:** 30 N·cm¹ :contentReference[oaicite:2]{index=2}  
+
+- **Parafuso de Fixação (HE)**  
+  - **Código:** PPP-2085  
+  - **Rosca:** M2  
+  - **Acionado por:** chaves hexagonais de 1,2 mm :contentReference[oaicite:3]{index=3}  
+
+- **Espaçadores**  
+  - **Anel espaçador:** EPRO-0001  
+  - **Cápsula espaçadora:** PROC-0405  
+  - **O-ring:** BMOR-6497 (Ø 4,1 mm) :contentReference[oaicite:4]{index=4}  
+
+> ¹ Valor de segurança para preservar a integridade do encaixe protético.  
+
+---
+
+### Hexágono Interno | Implantes
+- **Conexão**: Hexágono Interno 2,4 mm (largura) × 1,7 mm (profundidade)  
+- **Material**: Titânio Puro Grau II  
+- **Tratamento de superfície**: jateamento + ataque ácido  
+- **Rosca**: progressiva com câmara (estabilidade primária, indicado para carga imediata)  
+- **Diâmetros**: 3,3 mm | 4,0 mm | 5,0 mm  
+- **Alturas & Códigos**:  
+  - 7,0 mm – ECIE-3307 | ECIE-4007 | ECIE-5007  
+  - 8,5 mm – ECIE-3308 | ECIE-4008 | ECIE-5008  
+  - 10,0 mm – ECIE-3310 | ECIE-4010 | ECIE-5010  
+  - 11,5 mm – ECIE-3311 | ECIE-4011 | ECIE-5011  
+  - 13,0 mm – ECIE-3313 | ECIE-4013 | ECIE-5013  
+  - 14,5 mm – ECIE-3314 | ECIE-4014 | ECIE-5014  
+  - 16,0 mm – ECIE-3316 | ECIE-4016 | ECIE-5016  
+- **Parafuso padrão**: M2  
+- **Torque máximo de inserção**: 70 N·cm (implantes 3,3 mm); 80 N·cm (4,0 e 5,0 mm)  
+- **Chaves de instalação (hex 2,4 mm)**:  
+  - Curta: IHC-2414  
+  - Média: IMCA-2421  
+  - Longa: ILCA-2426  
+- **Acessórios**: tampa de implante acompanha o produto; plataforma switching compatível  
+> ¹ Valor de segurança para preservar a integridade do encaixe protético. :contentReference[oaicite:0]{index=0}
+
+---
+
+### Hexágono Interno | Componentes Protéticos
+**Solução Protética Cimentada**  
+- **Cicatrizador Padrão HI** (Ø 3,3 – 5,0 mm; alturas 2,0 – 6,0 mm):  
+  CPC-3302; CPC-3303; CPC-3304; CPC-3305; CPC-3306;  
+  CPC-4002; CPC-4003; CPC-4004; CPC-4005; CPC-4006;  
+  CPC-5002; CPC-5003; CPC-5004; CPC-5005; CPC-5006 :contentReference[oaicite:1]{index=1}
+
+---
+
+### Hexágono Interno | Componentes | CAD/CAM
+- **Ti-BASE Não Rotacional (HI)**  
+  - **Diâmetros**: 3,3 mm; 4,0 mm; 5,0 mm  
+  - **Altura de cimentação**: 4,0 mm  
+  - **Torque máximo de cimentação**: 10 N·cm¹  
+  - **Códigos**: HI-3504; HI-4004; HI-5004  
+
+- **Ti-BASE Rotacional (HI)**  
+  - **Diâmetros**: 3,3 mm; 4,0 mm  
+  - **Altura de cimentação**: 4,0 mm  
+  - **Torque máximo de cimentação**: 10 N·cm¹  
+  - **Códigos**: HIR-3504; HIR-4004  
+
+- **Corpo de Escaneamento (HI)**  
+  - **Códigos**: JHI-3312; JHI-4012; JHI-5012  
+
+- **Parafuso de Fixação (HI)**  
+  - **Código**: PPF-2090  
+  - **Rosca**: M2  
+  - **Chave**: Hex 2,4 mm  
+
+> ¹ Valor de segurança para preservar a integridade do encaixe protético.
+
+---
+
+### Corpo Único Pilar Protético
+O **Corpo Único Pilar Protético** é um componente monobloco em titânio Grau V que integra implante e plataforma de cimentação numa única peça, eliminando micro-gap e aumentando a resistência mecânica.
+
+- **Disponível para**:  
+  - **Hexágono Externo** (Códigos: CUP-HE-3508; CUP-HE-4010; …)  
+  - **Hexágono Interno** (Códigos: CUP-HI-3310; CUP-HI-4010; …)  
+  - **Cone Morse** (Códigos: CUP-CM-3510; CUP-CM-4010; …)  
+
+- **Vantagens**:  
+  - Sem micro-gap  
+  - Maior resistência à fadiga  
+  - Facilidade de instalação e remoção  
+  - Compatível com fluxos CAD/CAM  
+
+- **Indicações**: próteses unitárias e sobre-implantes imediatos.
+
+---
+
+### Instrumental Cirúrgico
+
+#### Kit Cirúrgico Medens (ESK-1813)
+- **Descrição:** Conjunto completo de instrumentos em aço inoxidável grau cirúrgico, autoclaváveis, para instalação e manejo de implantes Medens (CM, HE e HI).
+- **Componentes principais:**
+  - Porta-brocas universal com encaixe para motor elétrico
+  - Chave dinamométrica (20–70 N·cm)
+  - Conjunto de brocas sequenciais:
+    - Ø 2,0 mm (pré‐furação)
+    - Ø 2,8 mm
+    - Ø 3,5 mm
+    - Ø 4,0 mm
+    - Ø 5,0 mm
+  - Limitadores de profundidade (em todas as bitolas)
+  - Extensões e reduções para brocas
+  - Sondinha de profundidade
+  - Pinça anatômica para manejo de componentes
+  - Caixa esterilizável em ABS médico
+- **Código do kit:** ESK-1813

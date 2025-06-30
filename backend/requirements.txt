@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+websockets
+openai
+faiss-cpu
+python-dotenv
+gTTS          
+langchain          
+langchain-community
+langchain-openai
+pytest
+pytest-asyncio
+pydub

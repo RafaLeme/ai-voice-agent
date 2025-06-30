@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.env # Seu arquivo .env
+
+# Dados do Faiss
+backend/faiss_index/
+backend/data/*.pkl # Se gerar pkl na pasta data
+
+# Arquivos de debug e temporários
+received_audio.webm
+converted_audio.wav
+
+# Logs
+*.log
+
+# IDEs
+.idea/ # Para PyCharm/IntelliJ
+.vscode/ # Para VS Code
+
+# npm/Node (se usar no futuro)
+node_modules/
