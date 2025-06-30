@@ -65,7 +65,7 @@ Antes de começar, certifique-se de ter instalado:
     * **Mantenha este arquivo `.env` fora do controle de versão do Git (ele já está no `.gitignore`).**
 
 5.  **Prepare a Base de Conhecimento (RAG):**
-    * No diretório `backend/data/`, edite o arquivo `CatalogoProdutos.txt` com o conteúdo que você deseja que o agente utilize para suas respostas (informações sobre produtos, serviços, FAQs, etc.). Quanto mais detalhado e relevante, melhor.
+    * No diretório `backend/data/`, adicione arquivos com conteudos para o RAG em  `.txt` preferencialmente, com o conteúdo que você deseja que o agente utilize para suas respostas (informações sobre produtos, serviços, FAQs, etc.). Quanto mais detalhado e relevante, melhor.
     * Com o ambiente virtual ativo, construa o índice FAISS a partir do seu `CatalogoProdutos.txt`. Este índice será usado para o RAG.
         ```bash
         cd backend
