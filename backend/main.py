@@ -139,7 +139,7 @@ async def ws_voice(ws: WebSocket, username: str = Query(None)):
                 print(f"INFO: Transcrição do usuário {username}: {text}")
                 reply = await chat_rag(username, text) # Passar username para chat_rag
                 print(f"INFO: Resposta do Agente para {username}: {reply}")
-                audio = synthesize_tts(reply)
+                audio = await synthesize_tts(reply)
                 await ws.send_bytes(audio)
                 print(f"INFO: Áudio de resposta enviado para {username}.")
             except Exception as e:
