@@ -7,11 +7,18 @@
   <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
-  <h1>Teste de Voz com RAG</h1>
+  <h1>AI Voice Agent SDR</h1>
   <div class="controls">
-    <button id="start">Iniciar</button>
-    <button id="stop">Parar</button>
+    <div class="name-input">
+      <label for="username">Seu Nome:</label>
+      <input type="text" id="username" placeholder="Digite seu nome">
+    </div>
+    <button id="start">Iniciar Gravação</button>
+    <button id="stop" disabled>Parar Gravação</button>
   </div>
+  <div class="status-area">
+    <p id="status-message">Aguardando...</p>
+    <p id="transcription-display"></p> <p id="response-display"></p> </div>
   <script src="src/js/script.js"></script>
 </body>
 </html>

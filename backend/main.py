@@ -7,7 +7,7 @@ load_dotenv(dotenv_path=dotenv_path)
 
 import asyncio
 from io import BytesIO
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Query
 from fastapi.middleware.cors import CORSMiddleware
 from openai import OpenAI
 from backend.rag import query_index
@@ -88,21 +88,21 @@ async def transcribe_bytes(data: bytes) -> str:
     )
     return result.text
 
-async def chat_rag(user_text: str) -> str:
+async def chat_rag(username: str, user_text: str) -> str:
     """
     Consulta o índice FAISS, monta prompt com contexto e chama ChatCompletions (nova interface).
     """
     docs = query_index(user_text)
     context = "\n\n".join(d.page_content for d in docs)
     prompt = f"""Você é um agente SDR (Sales Development Representative) especialista em prospecção de clientes.
-Sua tarefa é engajar o cliente de forma útil, respondendo suas perguntas e direcionando a conversa para a apresentação de produtos/serviços, com base no contexto fornecido.
+Sua tarefa é engajar o cliente **{username}** de forma útil, respondendo suas perguntas e direcionando a conversa para a apresentação de produtos/serviços, com base no contexto fornecido.
 Seja conciso, profissional e persuasivo. Se a pergunta do cliente não estiver diretamente relacionada ao contexto, tente guiá-lo de volta para o assunto principal ou para uma oportunidade de vendas.
 
 Contexto da Empresa/Produtos:
 {context}
 
 Interação Atual:
-Cliente: {user_text}
+Cliente ({username}): {user_text}
 Agente:"""
 
 
@@ -117,8 +117,9 @@ Agente:"""
     return response.choices[0].message.content
 
 @tapp.websocket("/ws/voice")
-async def ws_voice(ws: WebSocket):
+async def ws_voice(ws: WebSocket, username: str = Query(None)):
     await ws.accept()
+    print(f"INFO: WebSocket connection opened by user: {username}")
     audio_buffer = bytearray()
     try:
         while True:
@@ -127,27 +128,26 @@ async def ws_voice(ws: WebSocket):
             break 
 
     except WebSocketDisconnect:
-        print("INFO: WebSocket disconnected.")
+        print(f"INFO: WebSocket disconnected for user: {username}")
     except Exception as e:
-        print(f"ERROR: Erro no WebSocket: {e}")
+        print(f"ERROR: Erro no WebSocket para user {username}: {e}")
     finally:
         if audio_buffer:
             try:
-                print(f"INFO: Recebido {len(audio_buffer)} bytes de áudio para transcrição.")
+                print(f"INFO: Recebido {len(audio_buffer)} bytes de áudio para transcrição do usuário: {username}")
                 text = await transcribe_bytes(bytes(audio_buffer))
-                print(f"INFO: Transcrição: {text}")
-                reply = await chat_rag(text)
-                print(f"INFO: Resposta do Agente: {reply}")
+                print(f"INFO: Transcrição do usuário {username}: {text}")
+                reply = await chat_rag(username, text) # Passar username para chat_rag
+                print(f"INFO: Resposta do Agente para {username}: {reply}")
                 audio = synthesize_tts(reply)
                 await ws.send_bytes(audio)
-                print("INFO: Áudio de resposta enviado.")
+                print(f"INFO: Áudio de resposta enviado para {username}.")
             except Exception as e:
-                print(f"ERROR: Erro durante processamento ou envio da resposta: {e}")
-                # Enviar uma mensagem de erro de volta ao cliente, se possível
+                print(f"ERROR: Erro durante processamento ou envio da resposta para {username}: {e}")
                 try:
                     await ws.send_text("Desculpe, tive um problema ao processar seu áudio. Por favor, tente novamente.")
                 except:
-                    pass # Evita loop de erros se o socket já estiver fechado
+                    pass
             finally:
                 await ws.close()
         else:

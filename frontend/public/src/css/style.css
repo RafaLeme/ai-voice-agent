@@ -1,23 +1,110 @@
 body {
-    font-family: sans-serif;
-    margin: 2rem;
-    background: #f9f9f9;
-  }
-  
-  .controls button {
-    margin-right: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  
-  #start {
-    background: #2FACAF;
-    color: #fff;
-  }
-  
-  #stop {
-    background: #FFAA0D;
-    color: #fff;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+  margin: 2rem;
+  background: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 4rem); /* Garante que o body ocupe a tela, com margem */
+}
+
+h1 {
+  color: #2F80AF; /* Um tom de azul mais suave */
+  margin-bottom: 2rem;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+.controls button {
+  margin-right: 1rem;
+  padding: 0.75rem 1.5rem; /* Padding maior para melhor toque/clique */
+  border: none;
+  border-radius: 0.5rem; /* Bordas mais arredondadas */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+#start {
+  background: #2FACAF;
+  color: #fff;
+}
+
+#start:hover:not(:disabled) {
+  background: #258C8E; /* Tom mais escuro no hover */
+  transform: translateY(-2px); /* Pequeno efeito de elevação */
+}
+
+#stop {
+  background: #FFAA0D;
+  color: #fff;
+}
+
+#stop:hover:not(:disabled) {
+  background: #e69a00; /* Tom mais escuro no hover */
+  transform: translateY(-2px);
+}
+
+/* Estilos para botões desabilitados */
+.controls button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  transform: none; /* Remove a elevação quando desabilitado */
+}
+
+.status-area {
+  background-color: #e0f2f7; /* Fundo suave para a área de status */
+  border: 1px solid #b3e0ed;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#status-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2F80AF;
+  margin-bottom: 1rem;
+}
+
+#transcription-display,
+#response-display {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  white-space: pre-wrap; /* Preserva quebras de linha e espaços */
+  text-align: left; /* Alinhar o texto da transcrição/resposta à esquerda */
+}
+
+#transcription-display {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.name-input {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.name-input label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.name-input input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
