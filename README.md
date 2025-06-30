@@ -8,7 +8,7 @@ Um AI Voice Agent completo e inteligente, incialmente focado em otimizar a prosp
 * **Speech-to-Text (STT)**: Transcrição da fala do usuário para texto utilizando a API Whisper da OpenAI.
 * **Retrieval-Augmented Generation (RAG)**: Geração de respostas contextuais e relevantes utilizando a base de conhecimento da empresa (catálogo de produtos, FAQs, etc.) com Langchain e um índice FAISS.
 * **Large Language Model (LLM)**: Utiliza o `gpt-4o-mini` da OpenAI para gerar respostas inteligentes e com persona de SDR.
-* **Text-to-Speech (TTS)**: Conversão da resposta do agente para áudio utilizando `gTTS`.
+* **Text-to-Speech (TTS)**: Conversão da resposta do agente para áudio utilizando `elevenlabs`.
 * **Comunicação Bidirecional**: Interação em tempo real via WebSockets entre frontend e backend.
 
 ## 🚀 Como Rodar o Projeto
