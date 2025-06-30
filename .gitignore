@@ -6,11 +6,13 @@ __pycache__/
 .Python/
 env/
 venv/
-*.env # Seu arquivo .env
+*.env
+.env
 
 # Dados do Faiss
 backend/faiss_index/
-backend/data/*.pkl # Se gerar pkl na pasta data
+backend/data/*
+!backend/data/.gitkeep
 
 # Arquivos de debug e temporários
 received_audio.webm
