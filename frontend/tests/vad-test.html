@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VAD Sensitivity Test</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; }
+    #controls { margin-bottom: 1rem; }
+    #logs { max-height: 300px; overflow-y: auto; background: #f5f5f5; padding: .5rem; }
+    #logs div { font-size: 0.9rem; border-bottom: 1px solid #ddd; padding: 2px 0; }
+    button { padding: .5rem 1rem; margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>VAD Sensitivity Test</h1>
+  <div id="controls">
+    <button id="startTest">Start Test</button>
+    <label>Threshold: 
+      <input type="range" id="threshold" min="0" max="0.1" step="0.001" value="0.02" disabled>
+      <span id="thresholdValue">0.020</span>
+    </label>
+  </div>
+  <div id="logs"></div>
+  <script>
+    document.getElementById('startTest').addEventListener('click', async () => {
+      const startBtn = document.getElementById('startTest');
+      const slider = document.getElementById('threshold');
+      const display = document.getElementById('thresholdValue');
+      const logs = document.getElementById('logs');
+      startBtn.disabled = true;
+      slider.disabled = false;
+
+      console.log('VAD Test: Initializing AudioContext and Worklet');
+      const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+      const processorCode = `
+class VADTestProcessor extends AudioWorkletProcessor {
+  constructor() {
+    super();
+    this.threshold = 0.02;
+    this.lastState = null;
+    this.port.onmessage = e => {
+      if (e.data.type === 'setThreshold') {
+        this.threshold = e.data.threshold;
+      }
+    };
+  }
+  process(inputs) {
+    const input = inputs[0]?.[0];
+    if (!input) return true;
+    let sum = 0;
+    for (let i = 0; i < input.length; i++) sum += Math.abs(input[i]);
+    const vol = sum / input.length;
+    this.port.postMessage({ type: 'volume', volume: vol });
+    const state = vol > this.threshold ? 'voice_activity' : 'no_voice_activity';
+    if (state !== this.lastState) {
+      this.port.postMessage({ type: 'vad_status', status: state });
+      this.lastState = state;
+    }
+    return true;
+  }
+}
+registerProcessor('vad-test-processor', VADTestProcessor);
+      `;
+
+      const blob = new Blob([processorCode], { type: 'application/javascript' });
+      const moduleUrl = URL.createObjectURL(blob);
+      console.log('VAD Test: Worklet module URL created');
+      await audioContext.audioWorklet.addModule(moduleUrl);
+      console.log('VAD Test: Worklet module loaded');
+
+      console.log('VAD Test: Requesting microphone access');
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const source = audioContext.createMediaStreamSource(stream);
+      const testNode = new AudioWorkletNode(audioContext, 'vad-test-processor');
+      source.connect(testNode);
+      testNode.connect(audioContext.destination);
+      console.log('VAD Test: Audio node connected');
+
+      slider.addEventListener('input', () => {
+        const val = parseFloat(slider.value);
+        display.textContent = val.toFixed(3);
+        testNode.port.postMessage({ type: 'setThreshold', threshold: val });
+        console.log(`VAD Test: Threshold set to ${val.toFixed(3)}`);
+      });
+
+      testNode.port.onmessage = e => {
+        const ts = new Date().toISOString();
+        let msg = '';
+        if (e.data.type === 'volume') {
+          msg = `Volume: ${e.data.volume.toFixed(4)}`;
+        } else if (e.data.type === 'vad_status') {
+          msg = `VAD Status: ${e.data.status}`;
+        }
+        console.log(`VAD Test [${ts}]: ${msg}`);
+        const div = document.createElement('div');
+        div.textContent = `${ts} | ${msg}`;
+        logs.prepend(div);
+        if (logs.childElementCount > 100) logs.removeChild(logs.lastChild);
+      };
+    });
+  </script>
+</body>
+</html>

@@ -108,3 +108,45 @@ h1 {
   border-radius: 0.25rem;
   font-size: 1rem;
 }
+
+.audio-visualizer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Largura do contêiner para o círculo */
+  height: 100px; /* Altura do contêiner para o círculo */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.audio-visualizer {
+  width: 60px; /* Tamanho inicial do círculo */
+  height: 60px; /* Tamanho inicial do círculo */
+  background-color: #2FACAF; /* Cor padrão */
+  border-radius: 50%; /* Torna-o um círculo */
+  transition: all 0.1s ease-out; /* Transição suave para o efeito de pulsação */
+  transform: scale(1); /* Escala inicial */
+  opacity: 0.7; /* Opacidade inicial */
+  box-shadow: 0 0 0 0 rgba(47, 172, 175, 0.4); /* Sombra para o efeito de pulsação */
+  animation: none; /* Desabilita a animação inicial */
+}
+
+/* Animação para quando estiver ativo (falando) */
+.audio-visualizer.active {
+  animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0.34, 1);
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(47, 172, 175, 0.4);
+  }
+  70% {
+      transform: scale(1.1);
+      box-shadow: 0 0 0 10px rgba(47, 172, 175, 0);
+  }
+  100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(47, 172, 175, 0);
+  }
+}

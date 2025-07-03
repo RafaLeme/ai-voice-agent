@@ -3,22 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voice RAG MVP</title>
+  <title>AI Voice Agent SDR</title>
   <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
   <h1>AI Voice Agent SDR</h1>
+  <div class="name-input">
+    <label for="username">Seu Nome:</label>
+    <input type="text" id="username" placeholder="Digite seu nome">
+  </div>
   <div class="controls">
-    <div class="name-input">
-      <label for="username">Seu Nome:</label>
-      <input type="text" id="username" placeholder="Digite seu nome">
-    </div>
-    <button id="start">Iniciar Gravação</button>
-    <button id="stop" disabled>Parar Gravação</button>
+    <button id="startBtn">Iniciar Gravação</button>
+    <button id="stopBtn" disabled>Parar Gravação</button>
+  </div>
+  
+  <div class="audio-visualizer-container">
+    <div id="audioVisualizer" class="audio-visualizer"></div>
   </div>
   <div class="status-area">
-    <p id="status-message">Aguardando...</p>
-    <p id="transcription-display"></p> <p id="response-display"></p> </div>
+    <p id="statusDiv">Aguardando...</p>
+    <div id="messages"></div>
+  </div>
   <script src="src/js/script.js"></script>
 </body>
 </html>
