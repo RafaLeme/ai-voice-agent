@@ -102,9 +102,10 @@ Antes de começar, certifique-se de ter instalado:
 
 1.  Com a página aberta em `http://localhost:3000`, clique no botão **"Iniciar"**.
 2.  Se o navegador solicitar permissão para usar o microfone, **conceda a permissão**.
-3.  Fale claramente no microfone, fazendo uma pergunta relacionada ao conteúdo que você inseriu no `CatalogoProdutos.txt`.
-4.  Clique no botão **"Parar"**.
-5.  O agente processará seu áudio e, após alguns segundos, você ouvirá a resposta sintetizada pelo agente diretamente no navegador.
+3.  Fale claramente no microfone, fazendo uma pergunta relacionada ao conteúdo que você inseriu no `/data`.
+4.  O agente processará seu áudio e, após alguns segundos, você ouvirá a resposta sintetizada pelo agente diretamente no navegador.
+5.  Após escutar a resposta, repita o processo para identificar o `conversation_context`.
+5.  Para finalizar a sessão, atualize o navegador ou pare o backend.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -121,8 +122,8 @@ Antes de começar, certifique-se de ter instalado:
 ## 🛣️ Próximos Passos e Melhorias Futuras
 
 * **Integração com VOIP e Asterisk**: Conectar a solução a um número VOIP real através do Asterisk hospedado em Docker.
-* **Streaming de Áudio Contínuo**: Implementar gravação e processamento de áudio em tempo real para uma conversação mais fluida, sem a necessidade de clicar "Iniciar/Parar" para cada turno.
-* **Gerenciamento de Contexto da Conversa**: Adicionar memória à interação para que o agente possa manter o contexto em diálogos mais longos.
+* ✅ **Streaming de Áudio Contínuo**: Implementar gravação e processamento de áudio em tempo real para uma conversação mais fluida, sem a necessidade de clicar "Iniciar/Parar" para cada turno.
+* ✅ **Gerenciamento de Contexto da Conversa**: Adicionar memória à interação para que o agente possa manter o contexto em diálogos mais longos.
 * **Feedback Visual no Frontend**: Melhorar a experiência do usuário com indicadores visuais de gravação, processamento e reprodução.
 * **Modularização do RAG**: Refinar a estrutura de dados e as estratégias de recuperação para RAG.
 * **Testes Abrangentes**: Expandir a suíte de testes para cobrir mais cenários e componentes da aplicação.
