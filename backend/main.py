@@ -136,6 +136,8 @@ async def chat_rag(username: str, messages: list) -> str:
     * NÃO alucine fatos ou informações. Se não souber a resposta com base no contexto fornecido ou no seu conhecimento prévio da MEDENS, diga que não possui essa informação e ofereça-se para verificar ou direcionar para um especialista.
     * Priorize informações do contexto RAG fornecido se forem diretamente relevantes para a pergunta atual do cliente e se encaixarem no fluxo da conversa.
     * Mantenha um tom otimista e voltado para a solução de problemas do cliente no âmbito dos produtos MEDENS.
+    * NÃO responda o que não souber e NÃO tiver absoluta certeza.
+    * Caso a interação não seja clara, peça para o cliente repetir de maneira respeitosa.
 
     **Regras de Pronúncia e Formatação para TTS:**
 
